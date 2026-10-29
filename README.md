@@ -1,39 +1,44 @@
 # WAS BLEIBT. — Ein Wegweiser für Menschen
 
-**Unabhängige Arbeitsprobe** von Michael Ninh für die Position **Referent*in Erbschaften & Großspenden** beim Humanistischen Verband Berlin-Brandenburg.
+**[Interaktive Live-Demo](https://mikelninh.github.io/was-bleibt/)**
 
-**[Live-Demo öffnen](https://mikelninh.github.io/was-bleibt/)**
+Unabhängige Arbeitsprobe von Michael Ninh für die Rolle **Referent*in Erbschaften & Großspenden** beim Humanistischen Verband Berlin-Brandenburg (HVD BB).
 
-## Idee
-Aus einem umfangreichen Angebot ein persönliches Gespräch machen: Menschen können ihre Interessen erkunden, passende Anliegen vergleichen und nachvollziehen, ob ein öffentlicher Spendenaufruf, ein dokumentierter Spendenweg oder bislang kein bestätigter Förderbedarf vorliegt.
+**Nicht offiziell**: Diese Seite ist keine HVD-Plattform, nimmt keine Spenden an und gibt keine Nachlass- oder Rechtsberatung.
 
-## In der Demo enthalten
-- Drei Schritte vom Interesse zur Projektauswahl
-- Fünf freiwillige, unverbindliche Förderbereiche statt exakter Spendenbeträge
-- Visuelle Einstiege in Jugend, Hospizarbeit, soziale Teilhabe und Bildung
-- 98 recherchierte Angebote; Suche und Filter
-- Bildkarten mit einheitlich gestalteten symbolischen Illustrationen
-- Quellen, Kennzeichnungen und Übergang zu offiziellen Informationen
-- Keine Zahlungserfassung, keine Anmeldung und keine rechtsverbindliche Testamentberatung
+## Worum geht es?
 
-## Vorführen in 90 Sekunden
-1. Themenbereich auswählen und kuratierte Projekte entdecken.
-2. Im **Projektfinder** Interesse und Art der Unterstützung angeben.
-3. Bei **Förderrahmen** „Noch offen“ oder einen Bereich auswählen.
-4. Die Ergebnisse und deren Begründung vergleichen.
-5. Im Katalog nach **Spendenstatus** filtern und die **offizielle Quelle** öffnen.
+Menschen möchten helfen, aber nicht jede Einrichtung veröffentlicht einen aktuellen Spendenbedarf. WAS BLEIBT. kombiniert einen freiwilligen dreistufigen Projektfinder, nachvollziehbare Projektquellen und eine visuelle Entdeckungsansicht mit 98 recherchierten Angeboten.
 
-## Lokal ausführen
-Eine statische, selbst enthaltene HTML-Seite — kein Backend, kein Build, keine API-Schlüssel erforderlich.
+## V7 – Visueller Polish
 
-```bash
-python -m http.server 8000
-# http://localhost:8000/
-```
+- **12 eigens erstellte KI-generierte Symbolbilder** in einer konsistenten warmen Bildsprache; keine realen Aufnahmen von HVD-Projekten
+- Fotobasierte Themenkacheln für Jugend, Hospiz, Soziales und Bildung
+- Bebilderte Angebotskarten und kuratierte Projektgeschichten
+- Bebilderte Einstiege in Großspenden, Unternehmensengagement und Nachlassbegleitung
+- Weniger Gleichförmigkeit, klarere Hierarchie, responsive Layouts und sichtbare Bildkennzeichnung
+- Freiwillige Spendenbereiche statt einzelner, preisschildartiger Beträge; der Bereich beeinflusst das Projektranking nicht
 
-## Wichtige Grenzen
-**Keine offizielle HVD-Plattform.** Öffentlich recherchierte Einträge sind nicht identisch mit einem fachlich bestätigten, aktuellen Spendenbedarf. Bilder sind freie symbolische Illustrationen, keine Fotos von Projektteilnehmenden. Vor einer produktiven Nutzung wären Zustimmung, Quellenprüfung, Rechte- und Markenfreigaben, Datenschutz, Barrierefreiheit und Prozesse für Spendenbelege und persönliche Beratung nötig.
+## In 90 Sekunden zeigen
 
-Für eine Pilotphase wären 5–10 abgestimmte, aktuelle Angebote und qualitative Gespräche mit echten Interessierten sinnvoller als die sofortige technische Integration aller 98 Angebote.
+1. Startseite öffnen und **Projekte entdecken** auswählen.
+2. Ein Themenbild wählen und die gefilterten Angebote sehen.
+3. Bei einer Karte **Projekt ansehen** wählen: Quellen und Spendenstatus erklären.
+4. Den Projektfinder ausprobieren und einen unverbindlichen Förderbereich wählen.
+5. Persönlichen Kontakt statt automatisierter Finanzierungsentscheidung hervorheben.
 
-**Stand:** 29. Oktober 2026 · [Kontakt / Portfolio](https://mikelninh.github.io/)
+## Einordnung und Grenzen
+
+- **98 katalogisierte Angebote bedeuten nicht 98 bestätigte Förderbedarfe.**
+- Unterscheidung zwischen veröffentlichtem Spendenaufruf, dokumentiertem Spendenweg und bislang nicht bestätigtem Projekt-Förderbedarf.
+- Alle fotografisch wirkenden Motive sind **synthetische Symbolbilder**. Sie bilden keine echten Mitarbeitenden, Kinder, Patient*innen, Räume oder Handlungen einer realen HVD-Einrichtung ab.
+- Quellen, Nutzungsrechte, Datenschutz, Barrierefreiheit, Spendenabwicklung, Inhalte und Markenführung benötigen vor produktiver Nutzung eine offizielle Freigabe.
+- Keine Echtzeit-Finanzierungsziele, keine Zahlungsverarbeitung, kein CRM und keine automatische Testamentserstellung.
+
+## Technischer Aufbau
+
+Die gesamte interaktive Website liegt in **`index.html`**. Die zwölf symbolischen Bildmotive sind komprimiert als WebP-Daten in dieser Datei eingebettet. Es gibt keinen Build-Schritt, keine Bildserver-Anfragen, keinen API-Schlüssel und kein Tracking.
+
+Für einen lokalen Test: `python -m http.server 8000` und `http://localhost:8000` öffnen.
+
+**Stand:** 29. Oktober 2026.
